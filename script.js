@@ -50,3 +50,6 @@ const isValid = (input) => {
 };
 
 convertBtn.addEventListener("click", decimalToRoman);
+numberInput.addEventListener("keydown", (e) => {
+    if (e.key == "Enter") {convertBtn.click();}
+});
